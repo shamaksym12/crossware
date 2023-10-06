@@ -1,0 +1,66 @@
+.homeContainer {
+  padding: 40px;
+  overflow-y: scroll;
+
+  h2 {
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .homeContent {
+    margin-top: 25px;
+
+    h5 {
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.projectContainer {
+  padding: 30px 30px 0 30px;
+
+  h5 {
+      font-weight: 600;
+      letter-spacing: 2px;
+      float: left;
+    }
+
+  .message {
+      float: right;
+      background-color: #ccedf2;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+
+      img {
+          margin-top: -3px;
+          margin-left: 15px;
+          height: 16px;
+          width: 16px;
+      }
+  }
+
+  .tabHeader {
+      padding: 0;
+      display: flex;
+
+      .tabItem {
+          list-style: none;
+          font-size: 20px;
+          background-color: #f2f2f2;
+          margin-right: 5px;
+          padding: 3px 10px;
+          width: 100px;
+          text-align: center;
+          color: #898989;
+          font-weight: 600;
+          border-radius: 5px;
+
+          &.active {
+              background-color: #00a5bf;
+              color: white;
+          }
+      }
+  }
+}

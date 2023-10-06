@@ -1,0 +1,62 @@
+.modal-content {
+    padding: 30px;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-title h4 {
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+        max-width: 600px !important;
+    }
+}
+
+.signupForm {
+    .ant-input {
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .ant-input-affix-wrapper.ant-input-password {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-radius: 10px;
+    }
+
+    label {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .ant-form-item-control-input-content {
+        justify-content: center;
+        display: flex;
+    }
+
+    button {
+        width: 230px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .ant-btn-primary {
+        border-color: #00A5BF;
+        background: #00A5BF;
+    }
+
+    .firstName {
+        padding-left: 0;
+    }
+
+    .secondName {
+        padding-right: 0;
+    }
+}

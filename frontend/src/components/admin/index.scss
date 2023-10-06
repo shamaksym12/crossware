@@ -1,0 +1,52 @@
+.inviteFormContainer {
+    .modal-content {
+        padding: 30px;
+    }
+
+    .modal-header {
+        border-bottom: none !important;
+    }
+
+    .modal-title h4 {
+        font-weight: 600;
+        width: 400px;
+    }
+
+    @media (min-width: 992px) {
+
+        .modal-lg,
+        .modal-xl {
+            max-width: 600px !important;
+        }
+    }
+
+    .modal-body {
+        .ant-form {
+
+            .ant-input {
+                // width: calc(100vw - 70vw);
+            }
+
+            .button{
+                display: flex;
+            }
+
+            .ant-btn {
+                height: 40px;
+                border-radius: 5px;
+                top: 20px;
+                font-size: 20px;
+                font-weight: 600;
+                background: #00A5BF;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+
+            .ant-btn-primary {
+                border-color: #00A5BF;
+                background: #00A5BF;
+                width: 200px;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import "../../pages/**/*.scss";
+@import "../../components/**/*.scss";
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~antd/dist/antd.css';
+@import '~react-calendar/dist/Calendar.css';
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/NotoSansJP/NotoSansJP-Regular.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+a, div, span, button, label {
+  cursor: url(../image/icon/cursor.png), auto;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.row {
+  max-width: 100%;
+  margin: 0;
+}
+
+.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  content: "";
+}
+
+.modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  .modal-dialog {
+    width: 100%;
+  }
+}
+
+.validation_error {
+  font-size: 14px;
+  margin-top: -20px;
+  color: #ff4d4f;
+}
+
+@media (min-width: 576px) {
+  .modal-sm {
+    max-width: 350px;
+  }
+}
+
+.modal-header .btn-close {
+  margin-top: -60px;
+  font-size: 22px;
+  margin-right: -30px;
+}
+
+// scrollbar style
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.ant-tree-list {
+  font-size: 12px;
+
+  .ant-tree-node-content-wrapper .ant-tree-title span {
+    font-size: 12px !important;
+  }
+}

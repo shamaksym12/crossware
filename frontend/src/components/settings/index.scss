@@ -1,0 +1,61 @@
+.projectContainer {
+    label {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .controls {
+        margin-top: 120px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .controlItem {
+            margin-right: 40px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 55px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .btnWrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+
+        button {
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #00A5BF;
+
+            @media (max-height: 830px) {
+                margin-top: -95px;
+            }
+        }
+    }
+}
+
+.profileContainer {
+    label {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .label {
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        &.editable {
+            color: #00a5bf;
+        }
+    }
+
+    .value div {
+        margin-bottom: 20px;
+    }
+}

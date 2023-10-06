@@ -1,0 +1,82 @@
+@startuml
+
+entity users {
+  + _id : string [PK]
+  + company_id : string [FK]
+  + first_name : string
+  + last_name : string
+  + email : string
+  + password : string
+  + phone_number : string
+  + privilege : string
+  + created_at : datetime
+  + updated_at : datetime
+}
+
+entity helmets {
+  + _id : string [PK]
+  + project_id : string
+  + company_id : string [FK]
+  + trtc_id : string
+  + device_id : string
+  + ip_address : string
+  + location_lat : string
+  + location_lng : string
+  + helmet_number : string
+  + phone_number : string
+  + society : string
+  + email : string
+  + team : string
+  + is_online : boolean
+  + created_at : datetime
+  + updated_at : datetime
+}
+
+entity logs {
+  + _id : string [PK]
+  + trtc_id : string
+  + message : string
+  + ip_address : string
+  + location_lat : string
+  + location_lng : string
+  + created_at : datetime
+  + updated_at : datetime
+}
+
+entity reports {
+  + _id : string [PK]
+  + name : string
+  + title : string
+  + content : string
+  + date : datetime
+  + status : boolean
+  + created_at : datetime
+  + updated_at : datetime
+}
+
+entity companies {
+  + _id : string [PK]
+  + name : string
+  + created_at : datetime
+  + updated_at : datetime
+}
+
+entity projects {
+  + _id : string [PK]
+  + title : string
+  + owner_user_id : string [FK]
+  + company_id : string [FK]
+  + created_at : datetime
+  + updated_at : datetime
+}
+
+companies ||--o{ users
+companies ||--o{ projects
+
+projects |o--o| helmets
+users |o--o| projects
+
+
+
+
+@enduml

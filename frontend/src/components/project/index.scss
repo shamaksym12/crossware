@@ -1,0 +1,384 @@
+body {
+    overflow-y: scroll;
+}
+
+.deleteFormContainer {
+    .modal-content {
+        padding: 30px;
+    }
+
+    .modal-header {
+        border-bottom: none !important;
+        text-align: center;
+        margin-left: 75px;
+    }
+
+    .modal-title h4 {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    @media (min-width: 992px) {
+
+        .modal-lg,
+        .modal-xl {
+            max-width: 600px !important;
+        }
+    }
+
+    .modal-body {
+        .ant-form {
+            display: flex;
+        }
+
+        .ant-form-item-control-input-content {
+            justify-content: center;
+
+            .ant-btn {
+                height: 40px;
+                border-radius: 5px;
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: 600;
+                background: #00A5BF;
+                display: inline;
+                margin-left: 25px;
+                margin-right: 15px;
+            }
+
+            .ant-btn-primary {
+                border-color: #00A5BF;
+                background: #00A5BF;
+                width: 200px;
+            }
+
+            .ant-form-item-control-input-content:last-child {
+                height: 40px;
+                border-radius: 5px;
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: 600;
+                background: #00A5BF;
+                float: right;
+            }
+        }
+    }
+}
+
+.deleteContent {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.projectViewContainer {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 18px;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    @media (max-width: 1530px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contentItem {
+        width: 100%;
+        position: relative;
+        background-color: #e1e1e1;
+        padding: 4px;
+        color: #565657;
+        bottom: 5px;
+
+        .contentItem:first-child {
+            margin-left: 270px;
+        }
+
+        .content {
+            height: 100%;
+            background-color: white;
+            padding: 50px 12px 10px 12px;
+            text-align: center;
+        }
+
+        .information {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+
+            img {
+                width: 24px;
+                margin-top: -3px;
+            }
+        }
+
+        .menu {
+            width: 24px;
+            height: 24px;
+            margin: 10px;
+        }
+
+        .add {
+            width: auto;
+            height: auto;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            word-wrap: break-word;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        .address {
+            font-size: 15px;
+        }
+
+        .date {
+            font-size: 16px;
+            padding-top: 10px;
+        }
+
+        .manager {
+            font-size: 13px;
+        }
+
+        .onlineUser {
+            margin-top: 50px;
+            font-size: 12px;
+            padding-bottom: 30px;
+
+
+            img {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        &.active {
+            background-color: #00a5bf;
+        }
+
+        &.active_over {
+            background-color: #00a5bf;
+        }
+    }
+
+    .controlBoard {
+        position: relative;
+        top: 8px;
+        left: -8px;
+        background-color: #56565725;
+        float: right;
+        padding-top: 3px;
+        padding-left: 3px;
+        height: 25px;
+        width: 25px;
+        border: 1px solid #56565725;
+        border-radius: 50%;
+
+        &:focus {
+            border-color: #00a5bf;
+        }
+
+        .cds--overflow-menu-options {
+            top: 50px;   
+            z-index: 1;         
+        }
+
+        .cds--overflow-menu-options--md {
+            top: 50px;
+            z-index: 1;
+        }
+        
+        .cds--overflow-menu-options--open {
+            top: 50px;
+            z-index: 1;
+        }
+
+        .cds--overflow-menu-options__btn {
+            top: 50px;
+            z-index: 1;    
+        }
+
+        .cds--visually-hidden {
+            display: none;
+            left: -1000px;
+            top: -500px;
+        }
+
+        ul {
+            list-style: none;
+        }
+        li {
+            top: -15px;
+            position: relative;
+            opacity: 1;
+            right: auto;
+        }
+
+        button {
+            top: -50px;
+            position: relative;
+            opacity: 1;
+            left: -8.5px;
+            right: auto;
+            z-index: -1;
+        }
+
+        .itemBoard {
+            width: 250px;
+            display: block;
+            border-radius: 0px;
+            border-top: 1px;
+            border-right: 1px;
+            border-bottom: 1px;
+            border-left: 1px;
+            border-style: solid;
+            border-color: #56565725;
+            padding: 15px 0 10px 0;
+            margin-top: none;
+            background-color: white;
+            color: #565657;
+
+            &:hover {
+                background-color: #00a5bf;
+                color: white;
+            }
+
+            .board {
+                margin: 0px;
+            }
+        }
+
+        .itemBoard:last-child {
+            top: -50px;
+        }
+
+        a {
+            top: -50px;
+        }
+
+        .link{
+            color: #565657;
+            text-decoration: none;
+            background-color: white;
+
+            &:hover{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .triUp {
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid white;
+            border-left: 15px solid transparent;
+            position: absolute;
+            top: -30px;
+            left: -5px;
+            transform: rotate(270deg);
+            z-index: 1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            top: 8px;
+            width: 0;
+            height: 0;
+            border: 26px solid transparent;
+            border-bottom: 0;
+            margin-left: -6px;
+            margin-bottom: -26px;
+            transform: rotate(90deg);
+            z-index: 1;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            top: 8px;
+            width: 0;
+            height: 0;
+            border: 26px solid transparent;
+            border-bottom: 0;
+            margin-left: -6px;
+            margin-bottom: -26px;
+            transform: rotate(90deg);
+            z-index: 1;
+        }
+    }
+}
+
+.btnWrap {
+    display: flex;
+    justify-content: left;
+    margin-top: 90px;
+
+    button {
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #00A5BF;
+
+        @media (max-height: 830px) {
+            margin-top: -95px;
+        }
+    }
+
+    button:hover {
+        background-color: #00A5BF;
+    }
+}
+
+.addContainer {
+    display: block;
+    position: fixed;
+    border-radius: 0px;
+    border: 2px #56565725;
+    z-index: 1;
+
+    .contentItem {
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        border-radius: 0px;
+        border-top: 2px;
+        border-right: 2px;
+        border-bottom: 2px;
+        border-left: 2px;
+        border-style: solid;
+        border-color: #56565725;
+        padding: 50px 0;
+        margin: auto;
+        background-color: white;
+
+        .add {
+            width: auto;
+            height: auto;
+        }
+
+        &.active {
+            border-color: #00a5bf;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.textBoardContainer {
+    position: fixed;
+    top: 56px;
+    right: -400px;
+    width: 400px;
+    height: calc(100vh - 56px);
+    transition: right 0.3s ease-out;
+    background-color: #f0f0f0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 30px;
+
+    .mt-5{
+        overflow-y: auto;
+        height: calc(100vh - 320px);
+    }
+
+    .chatTitle {
+        font-weight: 600;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 10px;
+    }
+
+    .ant-select {
+        width: 170px !important;
+
+        .ant-select-selector {
+            border-radius: 40px;
+            padding: 0 20px;
+        }
+    }
+
+    .newMessage {
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+    }
+}
+
+.fileBoardContainer {
+    position: fixed;
+    top: 55px;
+    right: -600px;
+    width: 600px;
+    height: calc(100vh - 55px);
+    transition: right 0.3s ease-out;
+    background-color: #f0f0f0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 30px;
+
+    .mt-5{
+        margin-top: 10px !important;
+        overflow-y: auto;
+        height: calc(100vh - 300px);
+    }
+
+    .fileupload{
+        position: relative;
+        border-top: 1px #565657 solid;
+        padding-top: 10px;
+        bottom: -10px;
+    }
+
+
+}
+
+.tabHeader {
+    padding: 0;
+    display: flex;
+
+    .tabItem {
+        list-style: none;
+        font-size: 18px;
+        background-color: #fff;
+        margin-right: 5px;
+        padding: 3px 20px;
+        width: auto;
+        text-align: center;
+        color: #898989;
+        font-weight: 600;
+        border-radius: 5px;
+
+        &.active {
+            background-color: #00a5bf;
+            color: white;
+        }
+    }
+}
+
+.showBox {
+    right: 0;
+}
+
+.closeButton {
+    float: right;
+    margin-top: -5px;
+    width: 24px;
+    height: 24px;
+}
+
+.mainClose {
+    float: right;
+    margin-top: -15px;
+    margin-right: -10px;
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,191 @@
+.react-draggable.addReport {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #565657;
+    z-index: 1;
+
+    &.reduced {
+        width: 340px !important;
+
+        .content {
+            padding: 0 20px;
+
+            .title {
+                display: none;
+            }
+
+            #addReport {
+                button {
+                    width: 100% !important;
+                    background-color: #00A5BF !important;
+                    border-color: #00A5BF !important;
+                }
+    
+                textarea {
+                    height: 530px;
+                }
+            }
+        }
+    }
+
+    .header {
+        display: flex;
+        justify-content: left;
+        background-color: #565657;
+        height: 30px;
+        padding: 5px 15px;
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+    }
+
+    .content {
+        padding: 30px 40px;
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        #addReport {
+            margin-top: 20px;
+
+            input, textarea {
+                border-radius: 5px;
+            }
+
+            textarea {
+                height: 470px;
+            }
+
+            .ant-form-item.action .ant-form-item-control-input-content {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    width: 200px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    height: 35px;
+                    background-color: #a5a5a5;
+                    border-color: #a5a5a5;
+                    transition: inherit;
+
+                    &.active {
+                        background-color: #008EAC;
+                        border-color: #008EAC;
+                    }
+                }
+            }
+        }
+
+        .reportForm {
+            label, input, textarea, button {
+                font-size: 14px;
+            }
+
+            .action {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    width: 200px;
+                    background-color: #00A5BF;
+                    border-color: #00A5BF;
+                }
+            }
+        }
+    }
+
+    textarea {
+        resize: none;
+        height: 400px;
+      }
+}
+
+.detailModal {
+    position: absolute;
+    width: calc(100% - 180px);
+    height: calc(100vh - 180px);
+    top: 65px;
+    left: 90px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+
+    &.reducedScale {
+        width: 600px !important;
+        height: 400px !important;
+
+        .header {
+            .rightPanel {
+                display: none !important;
+            }
+        }
+    }
+
+    .header {
+        background-color: #565657;
+        color: white;
+        height: 30px;
+        padding: 5px 15px;
+        display: flex;
+        font-size: 14px;
+        justify-content: space-between;
+        letter-spacing: 1px;
+        font-weight: 400;
+        border: none;
+
+        .leftPanel {
+            display: flex;
+
+            .detailTitle {
+                font-weight: 600;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-left: 10px;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 15px;
+            }
+        }
+
+        .rightPanel {
+            display: flex;
+            
+            .detailDate {
+                margin-right: 25px;
+            }
+        }
+    }
+
+    .content {
+        border: none;
+        height: calc(100% - 30px);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.focused {
+    z-index: 1;
+}

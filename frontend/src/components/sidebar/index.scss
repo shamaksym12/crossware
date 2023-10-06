@@ -1,0 +1,100 @@
+.sidebarContainer {
+    background-color: #00A5BF;
+    height: 100vh;
+    padding: 16px;
+
+    .main_logo {
+        width: 100%;
+    }
+}
+
+.navContainer {
+    ul {
+        padding: 0;
+        margin-top: 45px;
+
+        .devider {
+            height: 1px;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 16px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+    
+            .navLink {
+                display: flex;
+                text-decoration: none;
+                justify-content: space-between;
+
+                div {
+                    display: flex;
+                }
+
+                img {
+                    height: 18px;
+
+                    &.sub {
+                        width: 23px;
+                        height: 23px;
+                        margin-top: 1px;
+                        margin-left: 10px;
+                    }
+
+                    &.angle {
+                        width: 10px;
+                        height: 17px;
+                        margin-top: 4px;
+                        margin-left: 10px;
+                    }
+
+                    &.rightangle {
+                        height: 14px;
+                        margin-top: 4px;
+                        margin-left: -4px;
+                    }
+                }
+
+                h4 {
+                    color: #D0D2D3;
+                    padding-left: 12px;
+                    min-width: 146px;
+                    font-weight: 600;
+                    margin: 0;
+                    font-size: 16px;
+                }
+            }
+
+            img.add_report {
+                width: 18px;
+                height: 18px;
+                margin-top: 1px;
+                margin-left: -16px;
+            }
+
+            &.activeNav {
+                background-color: #008EAC;
+
+                h4 {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.emptyTreeContainer {
+    background-color: #F2F2F2;
+    padding: 15px;
+    height: 100%;
+
+    h6 {
+        line-height: 1.5;
+        font-weight: 600;
+        opacity: 0.3;
+    }
+}

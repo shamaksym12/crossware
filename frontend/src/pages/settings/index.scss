@@ -1,0 +1,35 @@
+.settingsContainer {
+    padding: 35px 24px 10px 24px;
+
+    h4.title {
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .tabHeader {
+        display: flex;
+        margin-top: 25px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+        .tabHeaderItem {
+            font-size: 16px;
+            width: 20%;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.5);
+            padding-bottom: 5px;
+            // border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+            &.active {
+                color: black;
+                border-bottom: 3px solid #00A5BF;
+            }
+        }
+    }
+
+    .tabContent {
+        margin-top: 40px;
+        height: calc(100vh - 220px);
+        overflow-y: auto;
+        padding-right: 10px;
+    }
+}
